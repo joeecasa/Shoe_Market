@@ -43,7 +43,6 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
 
      function agregarProducto(event) {
-          event.preventDefault();
 
           // Delegation para agregar-carrito
           if (event.target.classList.contains('agregarCarrito')) {
