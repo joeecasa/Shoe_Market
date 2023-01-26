@@ -1,23 +1,46 @@
 module.exports = {
   "development": {
-    "username": "c28sqwv991td8shu",   //rdPFvYiYwX
-    "password": "q0accczyukdbzzrl", //AvapkRmZXc
-    "database": "rnj9ky0w22h0cycz",           //rdPFvYiYwX
-    "host"    : "cxmgkzhk95kfgbq4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",               //remotemysql.com
+    "username": "sql10593039",   //rdPFvYiYwX
+    "password": "k1Y5ID9tIR", //AvapkRmZXc
+    "database": "sql10593039",           //rdPFvYiYwX
+    "host"    : "sql10.freemysqlhosting.net",               //remotemysql.com
     "dialect": "mysql"
   },
   "test": {
-    "username": "c28sqwv991td8shu",   //rdPFvYiYwX
-    "password": "q0accczyukdbzzrl", //AvapkRmZXc
-    "database": "rnj9ky0w22h0cycz",           //rdPFvYiYwX
-    "host"    : "cxmgkzhk95kfgbq4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",               //remotemysql.com
+    "username": "sql10593039",   //rdPFvYiYwX
+    "password": "k1Y5ID9tIR", //AvapkRmZXc
+    "database": "sql10593039",           //rdPFvYiYwX
+    "host"    : "sql10.freemysqlhosting.net",               //remotemysql.com
     "dialect": "mysql"
   },
   "production": {
-    "username": "c28sqwv991td8shu",   //rdPFvYiYwX
-    "password": "q0accczyukdbzzrl", //AvapkRmZXc
-    "database": "rnj9ky0w22h0cycz",           //rdPFvYiYwX
-    "host"    : "cxmgkzhk95kfgbq4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",               //remotemysql.com
+    "username": "sql10593039",   //rdPFvYiYwX
+    "password": "k1Y5ID9tIR", //AvapkRmZXc
+    "database": "sql10593039",           //rdPFvYiYwX
+    "host"    : "sql10.freemysqlhosting.net",               //remotemysql.com
     "dialect": "mysql"
   }
 }
+// module.exports = {
+//   "development": {
+//     "username": "root",   //rdPFvYiYwX
+//     "password": "Joelcasa2022", //AvapkRmZXc
+//     "database": "dbshoe",           //rdPFvYiYwX
+//     "host"    : "127.0.0.1",               //remotemysql.com
+//     "dialect": "mysql"
+//   },
+//   "test": {
+//     "username": "root",   //rdPFvYiYwX
+//     "password": "Joelcasa2022", //AvapkRmZXc
+//     "database": "dbshoe",           //rdPFvYiYwX
+//     "host"    : "127.0.0.1",               //remotemysql.com
+//     "dialect": "mysql"
+//   },
+//   "production": {
+//     "username": "root",   //rdPFvYiYwX
+//     "password": "Joelcasa2022", //AvapkRmZXc
+//     "database": "dbshoe",           //rdPFvYiYwX
+//     "host"    : "127.0.0.1",               //remotemysql.com
+//     "dialect": "mysql"
+//   }
+// }

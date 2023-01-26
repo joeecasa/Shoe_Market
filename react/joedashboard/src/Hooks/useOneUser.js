@@ -32,7 +32,6 @@ export const useOneUser = (url) => {
     return {
         dataUser: state.dataUser,
         isLoadingUser: state.isLoadingUser,
-
     }
 
     

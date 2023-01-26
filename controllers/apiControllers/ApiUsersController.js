@@ -27,8 +27,8 @@ let userApiController = {
                     delete element.dataValues.rol_id
                     delete element.dataValues.updated_at
                     delete element.dataValues.created_at
-                    element.dataValues.detail = `https://shoemarket.herokuapp.com/api/users/detail/${element.dataValues.id}`
-                    element.dataValues.image = `https://shoemarket.herokuapp.com/img/user/${element.dataValues.image}`
+                    element.dataValues.detail = `https://shoemarket.fly.dev/api/users/detail/${element.dataValues.id}`
+                    element.dataValues.image = `https://shoemarket.fly.dev/img/user/${element.dataValues.image}`
 
                 })
                 res.json({
@@ -57,7 +57,7 @@ let userApiController = {
                     last_name: user.last_name,
                     email: user.email,
                     date_of_birth: user.date_of_birth,
-                    image: `https://shoemarket.herokuapp.com/img/user/${user.image}`,
+                    image: `https://shoemarket.fly.dev/img/user/${user.image}`,
                     adress: user.adress,
                     rol: user.roles.name,
 

@@ -18,8 +18,11 @@ const controller = {
                 { association: "ordenes" },
 
             ],
+            where: {
+                status : "Enabled"
+            },
             limit: 6,
-            order: sequelize.random()
+            order: sequelize.random() 
 
         }).then(function (productos) {
             return res.render("home", { productos, title: "Shoe Market" })

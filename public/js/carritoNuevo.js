@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     
 
    
-
+console.log(local)
     if (local && local.length > 0) {
 
         local.forEach(producto => {
@@ -124,16 +124,5 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
 
     })
-   
-
-
-
-
-
-
-
-
-
-
 
 })

@@ -4,8 +4,8 @@
   "description": "Shoe Market es un proyecto de desarrollo que consiste en la realización de un sitio web (E-commerce) dedicado a la comercialización de calzado femenino. El objetivo principal de este proyecto es brindar una oferta variada y de calidad en diferentes diseños y estilos de calzado conservando y siguiendo los estándares de eficacia del producto que garanticen la satisfacción de los clientes. Así mismo, se pretende que los clientes puedan tener una experiencia cómoda en el proceso de compra de los productos pues se les facilitará dicho proceso mediante el e-commerce en cuestión.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "dev": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "express": "^4.17.3",
     "express-session": "^1.17.3",
     "express-validator": "^6.14.0",
+    "fly": "^4.3.18",
     "mariadb": "^3.0.0",
     "method-override": "^3.0.0",
     "multer": "^1.4.4",

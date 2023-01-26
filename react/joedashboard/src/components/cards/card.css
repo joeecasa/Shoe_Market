@@ -57,6 +57,13 @@
     text-align: center;
 
 }
+.cardProduct-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+}
 .cardUser-btn{
     border-radius: 10px;
     border: 0.5px solid rgb(90 34 130);

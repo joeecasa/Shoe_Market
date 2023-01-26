@@ -43,8 +43,8 @@ const ApiProductsController = {
                         name: product.name,
                         description: product.description,
                         categorias: product.categorias,
-                        detail: `https://shoemarket.herokuapp.com/api/products/detail/${product.id}`,
-                        img: `https://shoemarket.herokuapp.com/img/products/${product.image}`,
+                        detail: `https://shoemarket.fly.dev/api/products/detail/${product.id}`,
+                        img: `https://shoemarket.fly.dev/img/products/${product.image}`,
                         category: product.categorias.name
                     }
                     return obj
@@ -76,7 +76,8 @@ const ApiProductsController = {
                     id: product.id,
                     name: product.name,
                     description: product.description,
-                    img: `https://shoemarket.herokuapp.com/img/products/${product.image}`,
+                    img: `https://shoemarket.fly.dev/img/products/${product.image}`,
+                    // img: `https://shoemarket.herokuapp.com/img/products/${product.image}`,
                     category: product.categorias.name,
                     price : product.price,
                     quantity : 1,

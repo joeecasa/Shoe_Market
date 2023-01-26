@@ -25,6 +25,7 @@ router.post("/",mainController.index)
 router.get('/search',mainController.search)
 
 router.get('/detalle/:id', mainController.detalle)
+
 router.get('/carrito',mainController.carrito)
 
 router.get("/contact",mainController.contact)

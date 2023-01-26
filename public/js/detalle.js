@@ -29,7 +29,7 @@ function cargarAlCarrito(productId) {
      if (localStorage.getItem('platillos') === null) {
 
           const listProducts = []
-          fetch(`https://shoemarket.herokuapp.com/api/products/detail/${productId}`)
+          fetch(`http://localhost:4000/api/products/detail/${productId}`)
                .then((response) => response.json())
                .then((data) => {
                     listProducts.push(data.product)
@@ -56,7 +56,7 @@ function cargarAlCarrito(productId) {
                }
                 
                else{
-                         fetch(`https://shoemarket.herokuapp.com/api/products/detail/${productId}`)
+                         fetch(`http://localhost:4000/api/products/detail/${productId}`)
                          .then((response) => response.json())
                          .then((data) => {
                          localStorageProduct.push(data.product)                                    
