@@ -29,6 +29,8 @@ if (local && local.length > 0) {
 
     if (local && local.length > 0) {
         cartP.classList.remove("cart-none")
+        cartP.innerHTML = suma
+
     } else {
         cartP.classList.add("cart-none")
 

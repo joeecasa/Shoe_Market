@@ -84,6 +84,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
                          localStorage.setItem("platillos", JSON.stringify(listProducts))
                     })
                     suma  = 1
+                    cartP.innerHTML = suma
                     cartPXl.innerHTML = suma
                     
                }
@@ -93,6 +94,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
                     
                     console.log("Este es productId ", productId)
                     suma = suma + 1
+                    cartP.innerHTML = suma
                     cartPXl.innerHTML = suma
 
                for (let i = 0; i < localStorageProduct.length; i++) {
