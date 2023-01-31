@@ -4,14 +4,30 @@ window.addEventListener("DOMContentLoaded", function (event) {
     const agregarCarrito = document.querySelectorAll(".agregarCarrito")
     const btns = document.querySelectorAll("button[data-id]")
     const cartP = document.querySelector(".cart-p")
-     const cartPXl = document.querySelector(".cart-p-xl")
+    const cartPXl = document.querySelector(".cart-p-xl")
+    const local = JSON.parse(localStorage.getItem("platillos"))
+
+
+
+
+
+    let suma = 0
+
+    if (local && local.length > 0) {
+        local.forEach((producto) => {
+            suma = suma + producto.quantity
+        })
+
+    }
+
+
 
     btns.forEach((btn) => {
         btn.addEventListener("click", (event) => {
             event.target.classList.remove("form__button")
             event.target.classList.add("hover-agregando")
-            cartP.classList.remove("cart-none")                    
-           cartPXl.classList.remove("cart-none") 
+            cartP.classList.remove("cart-none")
+            cartPXl.classList.remove("cart-none")
         })
         btn.addEventListener("mouseleave", (event) => {
             event.target.classList.add("form__button")
@@ -42,52 +58,58 @@ window.addEventListener("DOMContentLoaded", function (event) {
             leerDatosProducto(productId);
         }
     }
-    
+
 
     function leerDatosProducto(productId) {
 
         if (localStorage.getItem('platillos') === null) {
 
-             const listProducts = []
-             fetch(`http://localhost:4000/api/products/detail/${productId}`)
-                  .then((response) => response.json())
-                  .then((data) => {
-                       listProducts.push(data.product)
-                       localStorage.setItem("platillos", JSON.stringify(listProducts))
-                  })
+            const listProducts = []
+            fetch(`http://localhost:4000/api/products/detail/${productId}`)
+                .then((response) => response.json())
+                .then((data) => {
+                    listProducts.push(data.product)
+                    localStorage.setItem("platillos", JSON.stringify(listProducts))
+                })
+            suma = 1
+            cartPXl.innerHTML = suma
 
-        } 
-        else 
-              {   let aux = 0 
-                  let localStorageProduct = JSON.parse(localStorage.getItem("platillos")) 
-                  
-                //   console.log("Este es productId " , productId)  
-                  
-                  for(let i=0; i<localStorageProduct.length; i++){
-                       if(JSON.stringify(localStorageProduct[i].id) === productId){
-                          JSON.stringify(localStorageProduct[i].quantity++)
-                          //JSON.stringify(localStorageProduct[i].price)= JSON.stringify(localStorageProduct[i].price)*(JSON.stringify(localStorageProduct[i].quantity))
-                          aux = 1
-                        //   console.log("Encontrado")
-                       }
-                  }                                                                                                                                
-                  if(aux === 1){
-                       localStorage.setItem("platillos", JSON.stringify(localStorageProduct))
-                  }
-                   
-                  else{
-                            fetch(`http://localhost:4000/api/products/detail/${productId}`)
-                            .then((response) => response.json())
-                            .then((data) => {
-                            localStorageProduct.push(data.product)                                    
-                            //localStorage.clear()
-                            localStorage.setItem("platillos", JSON.stringify(localStorageProduct))
-                            })
-                       }
-             }          
-             
+        }
+        else {
+            let aux = 0
+            let localStorageProduct = JSON.parse(localStorage.getItem("platillos"))
 
-   } //function leerDatosProducto(productId)  
+
+            suma = suma + 1
+            cartPXl.innerHTML = suma
+
+
+
+            for (let i = 0; i < localStorageProduct.length; i++) {
+                if (JSON.stringify(localStorageProduct[i].id) === productId) {
+                    JSON.stringify(localStorageProduct[i].quantity++)
+                    //JSON.stringify(localStorageProduct[i].price)= JSON.stringify(localStorageProduct[i].price)*(JSON.stringify(localStorageProduct[i].quantity))
+                    aux = 1
+                    //   console.log("Encontrado")
+                }
+            }
+            if (aux === 1) {
+                localStorage.setItem("platillos", JSON.stringify(localStorageProduct))
+            }
+
+            else {
+                fetch(`http://localhost:4000/api/products/detail/${productId}`)
+                    .then((response) => response.json())
+                    .then((data) => {
+                        localStorageProduct.push(data.product)
+                        //localStorage.clear()
+                        localStorage.setItem("platillos", JSON.stringify(localStorageProduct))
+                    })
+            }
+        }
+
+
+    } //function leerDatosProducto(productId)  
 
 
 

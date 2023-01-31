@@ -11,7 +11,7 @@ const ProductDetail = () => {
   const { productid } = useParams()
 
 
-  const { dataProduct, isLoadingProduct } = useOneProduct(`https://shoemarket.herokuapp.com/api/products/detail/${productid}`)
+  const { dataProduct, isLoadingProduct } = useOneProduct(`https://shoemarket.fly.dev/api/products/detail/${productid}`)
   const { product } = !!dataProduct && dataProduct;
   const [producto, setProducto] = useState("")
  
@@ -35,7 +35,7 @@ const ProductDetail = () => {
   
  
     
-  const { id, name, description, img, category } = producto
+  const { name, description, img, category } = producto
 
   
 

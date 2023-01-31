@@ -6,7 +6,7 @@ import useAllProducts from "../../Hooks/useAllProducts"
 import CardLastProduct from '../../components/cards/CardLastProduct'
 
 const LastProduct = () => {
-  const { dataProducts, isLoadingProducts } = useAllProducts("https://shoemarket.herokuapp.com/api/products")
+  const { dataProducts, isLoadingProducts } = useAllProducts("https://shoemarket.fly.dev/api/products")
   const { products } = !!dataProducts && dataProducts;
   const [lastProduct, setlastProduct] = useState("")
   // const [ImglastProduct, setImglastProduct] = useState("")

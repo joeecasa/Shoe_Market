@@ -8,8 +8,9 @@ window.addEventListener("DOMContentLoaded", function (event) {
     const primeraPärte = document.querySelector(".primer-parte-carrito")
     
 
+
+  
    
-console.log(local)
     if (local && local.length > 0) {
 
         local.forEach(producto => {

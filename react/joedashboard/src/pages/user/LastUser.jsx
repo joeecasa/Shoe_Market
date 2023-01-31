@@ -7,7 +7,7 @@ import "./lastUser.css"
 
 
 const LastUser = () => {
-  const { dataUsers, isLoadingUsers } = useAllUsers("https://shoemarket.herokuapp.com/api/users")
+  const { dataUsers, isLoadingUsers } = useAllUsers("https://shoemarket.fly.dev/api/users")
   const {  users } = !!dataUsers && dataUsers;
   const [lastUser, setlastUser] = useState("")
   const [rolUser, setRolUser] = useState("")

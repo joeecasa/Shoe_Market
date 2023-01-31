@@ -11,21 +11,17 @@ import CardLastProduct from '../../components/cards/CardLastProduct'
 
 
 const Home = () => {
-  const { dataProducts, isLoadingProducts } = useAllProducts("https://shoemarket.herokuapp.com/api/products")
+  const { dataProducts, isLoadingProducts } = useAllProducts("https://shoemarket.fly.dev/api/products")
   const { countProduts, products, countByCategory } = !!dataProducts && dataProducts;
   const [lastProduct, setlastProduct] = useState("")
-  // const [ImglastProduct, setImglastProduct] = useState("")
-  // const urlImgProducto = "https://shoemarket.herokuapp.com/img/products/"
   const { description, name,img } = lastProduct
   const [categoryProd, setCategoryProd] = useState("")
   const [qcategoryProd, setqcategoryProd] = useState("")
 
 
-  const { dataUsers, isLoadingUsers } = useAllUsers("https://shoemarket.herokuapp.com/api/users")
+  const { dataUsers, isLoadingUsers } = useAllUsers("https://shoemarket.fly.dev/api/users")
   const { count, users } = !!dataUsers && dataUsers;
   const [lastUser, setlastUser] = useState("")
-  // const [ImglasUser, setImglasUser] = useState("")
-  // const urlUserImage = "https://shoemarket.herokuapp.com/img/user/"
   const { first_name, last_name, image, email, adress, date_of_birth } = lastUser
   const [rolUser, setRolUser] = useState("")
 
@@ -34,7 +30,6 @@ const Home = () => {
 
     if (dataUsers) {
       setlastUser(users[users.length - 1])
-      // setImglasUser(urlUserImage + image)
 
     }
 
@@ -57,7 +52,6 @@ const Home = () => {
 
     if (dataProducts) {
       setlastProduct(products[products.length - 1])
-      // setImglastProduct(urlImgProducto + lastProduct.img)
 
     }
 

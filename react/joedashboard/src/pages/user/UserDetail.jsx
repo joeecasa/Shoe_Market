@@ -4,14 +4,14 @@ import SideBar from '../../components/sidebar/SideBar'
 import useOneUser from '../../Hooks/useOneUser'
 import CardLastUser from '../../components/cards/cardLastUser'
 import "./lastUser.css"
-import { useParams,Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 
 const UserDetail = () => {
   const { userId } = useParams()
   console.log(userId)
 
-  const { dataUser, isLoadingUser } = useOneUser(`https://shoemarket.herokuapp.com/api/users/detail/${userId}`)
+  const { dataUser, isLoadingUser } = useOneUser(`https://shoemarket.fly.dev/api/users/detail/${userId}`)
   const {  user } = !!dataUser && dataUser;
   const [usuario, setUsuario] = useState("")
   
@@ -25,7 +25,7 @@ const UserDetail = () => {
   
  
   
-  const { id,first_name, last_name, image, email, adress, date_of_birth,rol } = usuario
+  const { first_name, last_name, image, email, adress, date_of_birth,rol } = usuario
 
   // if (!id) {
   //   return (

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 
 export default function UserList() {
-  const { dataProducts } = useAllProducts("https://shoemarket.herokuapp.com/api/products")
+  const { dataProducts } = useAllProducts("https://shoemarket.fly.dev/api/products")
   const { products } = !!dataProducts && dataProducts;
   const [arrayProducts, setArrayProducts] = useState("")
 
