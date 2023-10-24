@@ -110,7 +110,6 @@ const controller = {
                     color: req.body.color,
                     status: "Enabled",
                     image: req.file.filename
-
                 }
             })
                 .then(([product, created]) => {

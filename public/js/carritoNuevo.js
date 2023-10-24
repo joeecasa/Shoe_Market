@@ -106,6 +106,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     }
 
     const btns = document.querySelectorAll("button[data-id]")
+    console.log(btns)
 
     btns.forEach((btn) => {
         btn.addEventListener("click", (event) => {
