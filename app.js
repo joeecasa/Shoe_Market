@@ -72,5 +72,5 @@ app.use('/api', ApiMainRoutes)
 });
 
 //Definiendo pueto y levantando servidor
-const puerto = 8080
+const puerto = 3000
 app.listen(process.env.PORT || puerto, ()=>console.log("Servidor corriendo en el puerto ---> " + puerto))
