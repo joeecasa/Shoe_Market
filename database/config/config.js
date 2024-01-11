@@ -1,23 +1,23 @@
 module.exports = {
   "development": {
-    "username": "sql11656335",   //rdPFvYiYwX
-    "password": "wHeb5gS5CU", //AvapkRmZXc
-    "database": "sql11656335",           //rdPFvYiYwX
-    "host"    : "sql11.freemysqlhosting.net",               //remotemysql.com
+    "username": "sql10672528",   //rdPFvYiYwX
+    "password": "ewFGbFZlHj", //AvapkRmZXc
+    "database": "sql10672528",           //rdPFvYiYwX
+    "host"    : "sql10.freemysqlhosting.net",               //remotemysql.com
     "dialect": "mysql"
   },
   "test": {
-    "username": "sql11656335",   //rdPFvYiYwX
-    "password": "wHeb5gS5CU", //AvapkRmZXc
-    "database": "sql11656335",           //rdPFvYiYwX
-    "host"    : "sql11.freemysqlhosting.net",               //remotemysql.com
+    "username": "sql10672528",   //rdPFvYiYwX
+    "password": "ewFGbFZlHj", //AvapkRmZXc
+    "database": "sql10672528",           //rdPFvYiYwX
+    "host"    : "sql10.freemysqlhosting.net",               //remotemysql.com
     "dialect": "mysql"
   },
   "production": {
-    "username": "sql11656335",   //rdPFvYiYwX
-    "password": "wHeb5gS5CU", //AvapkRmZXc
-    "database": "sql11656335",           //rdPFvYiYwX
-    "host"    : "sql11.freemysqlhosting.net",               //remotemysql.com
+    "username": "sql10672528",   //rdPFvYiYwX
+    "password": "ewFGbFZlHj", //AvapkRmZXc
+    "database": "sql10672528",           //rdPFvYiYwX
+    "host"    : "sql10.freemysqlhosting.net",               //remotemysql.com
     "dialect": "mysql"
   }
 }

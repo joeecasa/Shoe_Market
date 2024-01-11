@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
      if (local && local.length > 0) {
           local.forEach((producto) => {
                 suma = suma + producto.quantity
+                console.log(producto)
            })
 
      }
@@ -111,6 +112,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
                else {
                     fetch(`https://shoemarket.fly.dev/api/products/detail/${productId}`)
+                    // fetch(`localhost:4000/api/products/detail/${productId}`)
                          .then((response) => response.json())
                          .then((data) => {
                               localStorageProduct.push(data.product)
